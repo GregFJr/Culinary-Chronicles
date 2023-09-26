@@ -8,7 +8,8 @@ router.post('/login', passport.authenticate('local', {
     failureFlash: true
 }));
 
-//create a logout route
+router.get('/login', (req, res) => {
+    res.render('login');
 
 router.get('/logout', async (req, res) => {
     req.logout();
