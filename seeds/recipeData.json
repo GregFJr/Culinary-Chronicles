@@ -1,0 +1,82 @@
+[
+    {
+      "title": "Macaroni Casarole",
+      "ingredients": "Macaroni, Milk, Cheddar, Gouda, Colby Jack",
+      "instructions": "Boil pasta, make cheese sauce by combining a fat and starch, cook the sauce until it's nice and thick, cook",
+      "prep": 10, 
+      "cook": 20,
+      "image_url": "/images/Mac.jpg"
+    },
+    {
+      "title": "Spicy Veggie Stir-Fry",
+      "ingredients": "Bell peppers, Broccoli, Carrots, Soy sauce, Ginger, Garlic, Red pepper flakes",
+      "instructions": "Heat oil in a pan, sauté garlic and ginger, add veggies and stir-fry for 5-7 minutes, add soy sauce and red pepper flakes, cook until veggies are tender",
+      "prep": 15,
+      "cook": 10,
+      "image_url": "/images/VeggieStir.jpg"
+    },
+    {
+      "title": "Creamy Tomato Soup",
+      "ingredients": "Tomatoes, Onion, Garlic, Basil, Cream, Olive oil, Salt, Pepper",
+      "instructions": "Heat oil, sauté onions and garlic, add chopped tomatoes and cook until soft, blend into a puree, return to heat, add cream, season and garnish with basil",
+      "prep": 10,
+      "cook": 30,
+      "image_url": "/images/Tomato.jpg"
+    },
+    {
+      "title": "Garlic Herb Roasted Chicken",
+      "ingredients": "Whole chicken, Garlic, Rosemary, Thyme, Olive oil, Salt, Pepper, Lemon",
+      "instructions": "Preheat oven, rub chicken with herb-garlic mixture, place lemon inside chicken cavity, roast until golden brown and fully cooked",
+      "prep": 20,
+      "cook": 60,
+      "image_url": "/images/GarlicChick.jpg"
+    },
+    {
+      "title": "Tropical Fruit Salad",
+      "ingredients": "Mango, Pineapple, Kiwi, Coconut flakes, Mint, Lime zest, Lime juice",
+      "instructions": "Dice fruits, combine in a bowl, sprinkle coconut flakes, zest and juice of lime, garnish with mint leaves",
+      "prep": 15,
+      "cook": 0,
+      "image_url": "/images/FruitSalad.jpg"
+    },
+    {
+     "title": "Lemon Herb Grilled Salmon",
+     "ingredients": "Salmon fillets, Lemon zest, Lemon juice, Garlic, Dill, Olive oil, Salt, Pepper",
+     "instructions": "Marinate salmon with lemon, herbs, and garlic for 30 minutes, grill each side for 4-5 minutes or until done",
+     "prep": 35,
+     "cook": 10,
+     "image_url": "/images/GrilledSalmon.jpg"
+    },
+    {
+     "title": "Chocolate Pudding",
+     "ingredients": "Cocoa powder, Maple syrup, Vanilla extract, Pinch of salt",
+     "instructions": "Blend all ingredients until smooth, chill for an hour before serving",
+     "prep": 10,
+     "cook": 0,
+     "image_url": "/images/ChocolatePudding.jpg"
+    },
+    {
+     "title": "Chicken Stuffed Pastry",
+     "ingredients": "Chicken breasts, Spinach, Feta cheese, Garlic, Pastry rolls, Olive oil, Salt, Pepper",
+     "instructions": "Sauté spinach and garlic, mix with feta, stuff into chicken breasts, bake until chicken is cooked through",
+     "prep": 15,
+     "cook": 25,
+     "image_url": "/images/ChickenStuffedPastry.jpg"
+    },
+    {
+     "title": "Vegetable Quinoa Pilaf",
+     "ingredients": "Quinoa, Broccoli, Carrots, Peas, Onion, Vegetable broth, Olive oil, Salt, Pepper",
+     "instructions": "Sauté onions, add quinoa and veggies, cook with broth until quinoa is fluffy and vegetables are tender",
+     "prep": 10,
+     "cook": 20
+    },
+    {
+     "title": "Pumpkin Spiced Latte",
+     "ingredients": "Espresso, Milk, Pumpkin puree, Sugar, Vanilla extract, Pumpkin spice, Whipped cream (optional)",
+     "instructions": "Heat milk, pumpkin, and sugar, brew espresso, combine in a cup, top with whipped cream and a sprinkle of pumpkin spice",
+     "prep": 5,
+     "cook": 5
+    }
+  
+  ]
+  
