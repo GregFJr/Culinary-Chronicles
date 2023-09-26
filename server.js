@@ -7,6 +7,7 @@ const path = require('path');
 const helpers = require('./utils/helpers');
 const fs = require('fs');
 const handlebars = require('handlebars');
+const flash = require('express-flash');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -31,6 +32,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(session({ secret: 'superSecret', resave: true, saveUninitialized: true }));
+app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
