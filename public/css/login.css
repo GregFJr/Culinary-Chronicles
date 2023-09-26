@@ -17,25 +17,27 @@
 }
 
 .main-log-container input {
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 35px;
     border-radius: 16px;
-    font-size: 15px;
-    padding: 0 10px;
+    font-size: 20px;
+    padding-right: 30px;
     margin: 10px 0;
     border: none;
     background-color: rgba(0, 0, 0, 0.546);
+    color: #fff; 
 }
 
 .main-log-container label {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
+    display: block;
 }
 
 .main-log-container .login {
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.546);
+    background-color: rgba(255, 255, 255, 0.600);
     height: 60vh;
     margin-top: 7%;
     padding: 20px;
@@ -45,7 +47,7 @@
 .main-log-container .signup {
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.516);
+    background-color: rgba(255, 255, 255, 0.600);
     height: 60vh;
     margin-top: 7%;
     padding: 20px;
@@ -70,6 +72,28 @@
 .main-log-container button:hover {
     background-color: #fff;
     color: #000;
+}
+
+.main-log-container h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.vl {
+    border-left: 1px solid #fff;
+    height: 70vh;
+    margin-top: 7%;
+    padding: 20px;
+    max-width: 50vw;
+    margin-left: 2.5%;
+}
+
+.promotion label{
+    display: inline;
+}
+
+.promotion input{
+    height: 15px;
 }
 
 #newsletter {
