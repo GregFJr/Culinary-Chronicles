@@ -1,0 +1,77 @@
+.login-body {
+    background-image: url('/images/login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
+    height: 100%;
+    
+}
+
+.main-log-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-log-container input {
+    width: 200px;
+    height: 30px;
+    border-radius: 16px;
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.546);
+}
+
+.main-log-container label {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main-log-container .login {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.546);
+    height: 60vh;
+    margin-top: 7%;
+    padding: 20px;
+    max-width: 50vw;
+}
+
+.main-log-container .signup {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.516);
+    height: 60vh;
+    margin-top: 7%;
+    padding: 20px;
+}
+
+.main-log-container button {
+    width: 200px;
+    height: 30px;
+    border-radius: 16px;
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.main-log-container button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#newsletter {
+    width: 40px;
+}
