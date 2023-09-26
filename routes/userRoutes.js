@@ -8,4 +8,10 @@ router.post('/login', passport.authenticate('local', {
     failureFlash: true
 }));
 
+
+router.get('/login', (req, res) => {
+    res.render('login');
+});
+
+
 module.exports = router;
