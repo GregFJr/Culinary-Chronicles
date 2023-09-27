@@ -14,7 +14,8 @@ app.get('/login', (req, res) => {
         res.status(500).json(err);
     }
 });
-app.post('/login', (req, res) => {
+
+app.post('/signup', (req, res) => {
     const { firstName, lastName, email, password, newsLetter } = req.body;
     const userExists = users.some(user => user.email === email);
         userExists = users.some(user => user.password == password);
@@ -36,8 +37,6 @@ app.post('/login', (req, res) => {
     res.redirect('/');
 
 });
-
-
 // non working code below
 
 
@@ -82,3 +81,4 @@ app.post('/login', (req, res) => {
 // module.exports = router;
 
   
+

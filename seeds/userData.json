@@ -1,18 +1,30 @@
 [
   {
-    "username": "smith77",
-    "password": "password123ABC!"
+    "username": "Mild77",
+    "password": "password123ABC!",
+    "firstname": "Mild",
+    "lastname": "Michael",
+    "email": "mildmicheal567@gmail.com"
   },
   {
     "username": "Jones45",
-    "password": "password123ABC!"
+    "password": "password123ABC!",
+    "firstname": "Orthogonal",
+    "lastname": "Jones",
+    "email": "orthjones678@gmail.com"
   },
   {
     "username": "johndoe12",
-    "password": "password123ABC!"
+    "password": "password123ABC!",
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe12@gmail.com"
   },
   {
     "username": "janedoe13",
-    "password": "password123ABC!"
+    "password": "password123ABC!",
+    "firstname": "Jane",
+    "lastname": "Doe",
+    "email": "janedoe45@gmail.com"
   }
 ]
