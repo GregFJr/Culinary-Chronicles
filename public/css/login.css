@@ -41,7 +41,7 @@
     height: 60vh;
     margin-top: 7%;
     padding: 20px;
-    max-width: 50vw;
+    /* max-width: 50vw; */
 }
 
 .main-log-container .signup {
@@ -96,6 +96,37 @@
     height: 15px;
 }
 
+::placeholder {
+    color: rgba(255, 255, 255, 0.421);
+}
+
+.mobile-signup-dsp {
+    display: none;
+}
+
 #newsletter {
     width: 40px;
+}
+
+.dspsignup {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .main-log-container {
+        flex-direction: column;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .promotion {
+        display: none;
+    }
+
+    .mobile-signup-dsp {
+        display: block;
+    }
+
 }
