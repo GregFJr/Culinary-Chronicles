@@ -37,25 +37,48 @@ app.post('/signup', (req, res) => {
     res.redirect('/');
 
 });
+// non working code below
 
-app.post('/login', async (req, res) => {
-    try {
-        const userData = await User.findOne({ where: { email: req.body.email } });
-        if (!userData) {
-            res.status(400).json({ message: 'Incorrect email or password, please try again' });
-            return;
-        }
-        const validPassword = await userData.checkPassword(req.body.password);
-        if (!validPassword) {
-            res.status(400).json({ message: 'Incorrect email or password, please try again' });
-            return;
-        }
-        req.session.save(() => {
-            req.session.user_id = userData.id;
-            req.session.logged_in = true;
-            res.json({ user: userData, message: 'You are now logged in!' });
-        });
-    } catch (err) {
-        res.status(400).json(err);
-    }
-}); // this checks the db for the email and password. if they match, it logs them in. if not, it sends an error message
+
+
+// const express = require('express');
+// const router = express.Router();
+// const passport = require('passport');
+// const User = require('./models/User'); // Replace with the path to your existing User model
+
+// // Login route
+// router.post('/login', passport.authenticate('local', {
+//   successRedirect: '/dashboard',
+//   failureRedirect: '/login',
+// }));
+
+
+
+// // the signup form is on the login page
+// // Signup route
+// router.post('/login', async (req, res) => {
+//   const { username, password, firstname, lastname, email, newsletter } = req.body;
+  
+//   try {
+//     const hashedPassword = await User.hashPassword(password); // Assuming you have a method in your User model to hash passwords
+//     const user = new User({
+//       username,
+//       password: hashedPassword,
+//       firstname,
+//       lastname,
+//       email,
+//       newsletter: !!newsletter, // Convert the checkbox value to boolean
+//     });
+
+//     await user.save();
+//     res.redirect('/login'); // Redirect to the login page after successful signup
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).send('Internal Server Error'); // Handle any error that occurs during signup
+//   }
+// });
+
+// module.exports = router;
+
+  
+
