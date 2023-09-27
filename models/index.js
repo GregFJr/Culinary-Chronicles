@@ -1,6 +1,6 @@
 const Recipe = require('./Recipe');
 const User = require('./User');
-const Rating = require('./rating');
+const Rating = require('./Rating');
 
 
 Recipe.belongsTo(User, {

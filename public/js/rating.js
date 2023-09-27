@@ -11,12 +11,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     if (parseInt(star.getAttribute('data-rating')) <= clickedStarRating) {
                         star.style.color = 'gold';
                     } else {
-                        star.style.color = 'gray';
+                        star.style.color = 'black';
                     }
                 });
-
-                // If needed in the future:
-                // const recipeId = this.getAttribute('data-recipe-id');
             }
         });
     });
@@ -44,3 +41,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+// Get the modal, button, and close elements
+var modal = document.getElementById("commentModal");
+var btn = document.getElementById("commentButton"); // Assuming you have a button with this ID to trigger the modal
+var span = document.getElementsByClassName("close-button")[0];
+
+// Open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Close the modal when 'x' is clicked
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close the modal if anywhere outside of the modal content is clicked
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+document.getElementById('commentBtn').addEventListener('click', function() {
+    document.getElementById('ratingForm').submit();
+});

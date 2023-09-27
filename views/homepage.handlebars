@@ -1,5 +1,6 @@
+<body class="homepageBody">
 {{> navbar }}
-<h1>Culinary Chronicles</h1>
+<h1 class="recipeHeading">Recipes</h1>
 <div class="recipes-container">
     {{#each recipes}}
        <div class="recipe-card">
@@ -7,7 +8,7 @@
             <img src="{{this.image_url}}" alt="{{this.title}}" class="recipe-img">
             <h3>{{this.title}}</h3>
           </a>  
-<form action="/ratings" method="post">        
+<form action="/ratings" method="post" id="ratingForm">        
 <div class="rating" data-recipe-id="{{recipe.id}}">
     <span class="star" data-rating="1">☆</span>
     <span class="star" data-rating="2">☆</span>
@@ -16,12 +17,24 @@
     <span class="star" data-rating="5">☆</span>
  </div>
 
-<textarea id="comment" placeholder="Leave a comment..."></textarea>
+<button type="button" id="commentButton">Leave a Comment</button>
 <button id="submitRating">Submit Rating</button>
 </form>  
             
-        </div>
+    </div>
     {{/each}}
 </div>
+<!-- The Modal -->
+<div id="commentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Leave a Comment</h2>
+    <textarea placeholder="Type your comment here..."></textarea>
+    <button class="submit-comment" id="commentBtn">Submit</button>
+  </div>
+</div>
+
+
+</body>
 <script src="/js/rating.js"></script>
 

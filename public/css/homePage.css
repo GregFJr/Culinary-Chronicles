@@ -1,6 +1,16 @@
 body, html {
     height: 100%;
     margin: 0;
+}
+
+.homepageBody {
+    background-image: url(/images/homepage2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -8,7 +18,7 @@ img {
     height: 300px;
     width: 300px;
     margin: 0 auto;
-    border-radius:  10%;
+    border-radius:  10% 10% 10% 10%;
 }
 
 h1 {
@@ -21,6 +31,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
    
 }
 
@@ -29,7 +40,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     margin: 20px;
-    /* transition: all 0.5s ease */
+    background-color: rgba(255, 255, 255, 0.626);
+    border: 4px solid #ffb400;
+    border-radius: 9% 9% 2% 2%;
+    
 }
 
 .recipe-img {
@@ -61,7 +75,8 @@ nav li a{
     margin: 10px;
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 40px;
+    font-family: 'Sacramento', cursive;
 }
 
 nav li a:hover{
@@ -91,9 +106,9 @@ nav li a:hover{
 }
 
 .star {
-    color: #ccc;  /* default color */
+    color: #000;  /* default color */
     cursor: pointer;
-    font-size: 24px;
+    font-size: 30px;
     padding: 0 5px;
 }
 
@@ -105,6 +120,71 @@ input[type="radio"]:hover ~ input[type="radio"] + .star {
 input[type="radio"]:checked ~ .star {
     color: #ffb400; 
 }
+
+.recipeHeading {
+    font-family: 'Sacramento', cursive;
+    color:#FFD700;
+    font-size: 80px;
+    text-decoration: none;
+}
+
+/* The Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefebe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.homepageBody button {
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+
 
 
 
