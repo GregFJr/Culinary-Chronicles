@@ -38,38 +38,30 @@ router.get("/users", async (req, res) => {
   }
 });
 
-const users = [];
 
-router.post("/signup", async (req, res) => {
-    try {
-        const { firstName, lastName, email, password } = req.body;
-        const userExists = users.some((user) => user.email === email);
-        userExists = users.some((user) => user.password == password);
+//handles the signup route
 
-        if (userExists) {
-            return res.status(400).send("User already exists");
-        }
-        const newUser = {
-            firstName,
-            lastName,
-            email,
-            password,
-        };
+router.post('/signup', async (req, res) => {
+  const { firstname, lastname, username, password } = req.body;
 
-        users.push(newUser);
-
-        const userDataFilePath = path.join(__dirname, "..", "seeds", "userData.json");
-        const userData = JSON.parse(fs.readFileSync(userDataFilePath));
-        userData.push(newUser);
-        fs.writeFileSync(userDataFilePath, JSON.stringify(userData));
-
-        res.redirect("/");
-    } catch (err) {
-        res.status(500).json(err);
-    }
+  try {
+    const user = await User.create({
+      username,
+      password,
+      firstname,
+      lastname,
+      email: username
+    });
+    await user.save();
+    res.redirect('/login');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
 });
 
 
+//handles the login route
 
 router.post("/login", async (req, res) => {
   try {
