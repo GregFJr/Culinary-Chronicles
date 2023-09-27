@@ -9,6 +9,19 @@
     
 }
 
+.greeting {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.greeting span {
+    color:  #FFD700; 
+}
+
 .main-log-container {
     display: flex;
     justify-content: center;
@@ -78,6 +91,7 @@
 .main-log-container h1 {
     text-align: center;
     font-size: 35px;
+    text-decoration: none;
 }
 
 .vl {
