@@ -21,5 +21,17 @@ router.get('/logout', async (req, res) => {
     res.redirect('/');
 });
 
+router.get('/users', async (req, res) => {
+    try {
+        const userData = await User.findAll({
+            attributes: ['username', 'password'], 
+        });
+        res.status(200).json(userData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+// route for this would be /users
 
 module.exports = router;
