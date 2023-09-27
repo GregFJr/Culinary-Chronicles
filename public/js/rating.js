@@ -15,7 +15,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     }
                 });
             }
+
         });
+    });
+});
+
+document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', function(e) {
+        const rating = e.target.getAttribute('data-rating');
+        document.getElementById('ratingValue').value = rating;
     });
 });
 
