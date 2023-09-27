@@ -22,4 +22,17 @@ router.get('/logout', async (req, res) => {
 });
 
 
+// below is for testing purposes. Check insomnia to see if it works
+router.get('/users', async (req, res) => {
+    try {
+        const userData = await User.findAll({
+            attributes: ['username', 'password'],
+        });
+        res.status(200).json(userData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
 module.exports = router;
