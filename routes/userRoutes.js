@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const passport = require("../config/passport");
-const { User } = require("../models");
+const { User, Rating } = require("../models");
 
 
 router.post('/login', passport.authenticate('local', {
@@ -30,6 +30,12 @@ router.get('/users', async (req, res) => {
     try {
         const userData = await User.findAll({
             attributes: ['id','username', 'password', 'firstname', 'lastname', 'email'], 
+            include: [
+                {
+                    model: Rating,
+                    attributes: ['value', 'comment', 'recipe_id']
+                }
+            ]
         });
         res.status(200).json(userData);
     } catch (err) {

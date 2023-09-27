@@ -15,7 +15,16 @@ Rating.init(
         },
         comment: {
             type: DataTypes.TEXT
-        }
+        },
+        recipe_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model:'recipe',
+                key: 'id'
+            }
+
+        },
     },
     {
         sequelize,
