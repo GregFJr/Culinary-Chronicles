@@ -1,6 +1,10 @@
+<body class="login-body">
+        <h1 class="greeting">Welcome to <span>Culinary Chronicles</span></h1>
+  <main class="main-log-container">
+    <section class="login">
 <h1>Login</h1>
 <form action="/login" method="post">
-    <div>
+    <div class="input-wrapper">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username">
     </div>
@@ -12,7 +16,11 @@
         <button type="submit">Login</button>
     </div>
 </form>
+</section> 
 
+    <div class="vl"></div>
+
+<section class="signup" id="signupForm"> 
 <h1>Signup</h1>
 <form action="/login" method="post">
     <div>
@@ -32,14 +40,16 @@
         <input type="password" id="password" name="password">
     </div>
     <div>
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Would you like to signup for our weekly newsletter?</label>
-    </div>
-    <div>
         <button type="submit">Signup</button>
     </div>
+    <div class="promotion">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Signup for our Newsletter?</label>
+    </div>
 </form>
-
-<script src="/public/js/login.js"></script>
+</section> 
+</main>
+</body>
+<script src="public/js/login.js"></script>
 
 

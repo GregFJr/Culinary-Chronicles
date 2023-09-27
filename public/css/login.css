@@ -1,0 +1,142 @@
+.login-body {
+    background-image: url('/images/login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
+    height: 100%;
+    
+}
+
+.greeting {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.greeting span {
+    color:  #FFD700; 
+}
+
+.main-log-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+.main-log-container input {
+    width: 300px;
+    height: 35px;
+    border-radius: 16px;
+    font-size: 20px;
+    padding-right: 30px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.546);
+    color: #fff; 
+}
+
+.main-log-container label {
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+}
+
+.main-log-container .login {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.600);
+    height: 60vh;
+    margin-top: 7%;
+    padding: 20px;
+    /* max-width: 50vw; */
+}
+
+.main-log-container .signup {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.600);
+    height: 60vh;
+    margin-top: 7%;
+    padding: 20px;
+}
+
+.main-log-container button {
+    width: 200px;
+    height: 30px;
+    border-radius: 16px;
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.main-log-container button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main-log-container h1 {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.vl {
+    border-left: 1px solid #fff;
+    height: 70vh;
+    margin-top: 7%;
+    padding: 20px;
+    max-width: 50vw;
+    margin-left: 2.5%;
+}
+
+.promotion label{
+    display: inline;
+}
+
+.promotion input{
+    height: 15px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.421);
+}
+
+.mobile-signup-dsp {
+    display: none;
+}
+
+#newsletter {
+    width: 40px;
+}
+
+.dspsignup {
+    display: block;
+}
+
+@media screen and (max-width: 1180px) {
+    .main-log-container {
+        flex-direction: column;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .promotion {
+        display: none;
+    }
+}
