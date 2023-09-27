@@ -5,7 +5,7 @@ const userRoutes = require('./userRoutes');
 router.get('/', async (req, res) => {
     try {
         const recipeData = await Recipe.findAll({
-            limit: 8
+            limit: 12
         });
         const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
         console.log(recipes);

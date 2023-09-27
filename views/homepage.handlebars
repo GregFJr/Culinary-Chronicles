@@ -4,13 +4,24 @@
     {{#each recipes}}
        <div class="recipe-card">
         <a href="/recipe/{{this.id}}" class="recipe-link">
-            <img src="{{this.image_url}}" alt="{{this.title}}">
+            <img src="{{this.image_url}}" alt="{{this.title}}" class="recipe-img">
             <h3>{{this.title}}</h3>
+          </a>  
+<form action="/ratings" method="post">        
+<div class="rating" data-recipe-id="{{recipe.id}}">
+    <span class="star" data-rating="1">☆</span>
+    <span class="star" data-rating="2">☆</span>
+    <span class="star" data-rating="3">☆</span>
+    <span class="star" data-rating="4">☆</span>
+    <span class="star" data-rating="5">☆</span>
+ </div>
+
+<textarea id="comment" placeholder="Leave a comment..."></textarea>
+<button id="submitRating">Submit Rating</button>
+</form>  
             
-            <!-- Star Rating System Here -->
-            <!-- '+' Sign to Save Recipe Here -->
-            </a>
         </div>
     {{/each}}
 </div>
+<script src="/js/rating.js"></script>
 

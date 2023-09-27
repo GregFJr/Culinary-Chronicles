@@ -103,6 +103,11 @@
     margin-left: 2.5%;
 }
 
+.alert {
+    color: red !important;
+    font-size: 22px;
+}
+
 .promotion label{
     display: inline;
 }

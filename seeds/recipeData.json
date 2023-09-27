@@ -68,15 +68,41 @@
      "ingredients": "Quinoa, Broccoli, Carrots, Peas, Onion, Vegetable broth, Olive oil, Salt, Pepper",
      "instructions": "Sauté onions, add quinoa and veggies, cook with broth until quinoa is fluffy and vegetables are tender",
      "prep": 10,
-     "cook": 20
+     "cook": 20,
+     "image_url": "/images/VegetableQuinoaPilaf.jpg"
     },
     {
-     "title": "Pumpkin Spiced Latte",
-     "ingredients": "Espresso, Milk, Pumpkin puree, Sugar, Vanilla extract, Pumpkin spice, Whipped cream (optional)",
-     "instructions": "Heat milk, pumpkin, and sugar, brew espresso, combine in a cup, top with whipped cream and a sprinkle of pumpkin spice",
-     "prep": 5,
-     "cook": 5
-    }
+      "title": "Spaghetti Carbonara",
+      "ingredients": "Spaghetti, Eggs, Pancetta, Pecorino Cheese, Black Pepper",
+      "instructions": "Cook the spaghetti. Mix eggs and cheese. Fry pancetta. Combine all with pepper.",
+      "prep": 15,
+      "cook": 20,
+      "image_url": "images/SpaghettiCarb.jpg"
+  },
+  {
+    "title": "Margherita Pizza",
+    "ingredients": "Pizza Dough, Tomato Sauce, Fresh Mozzarella, Basil, Olive Oil",
+    "instructions": "Roll out dough, spread sauce, add slices of mozzarella, bake until golden, and garnish with fresh basil.",
+    "prep": 20,
+    "cook": 15,
+    "image_url": "images/Margherita-pizza.jpg"
+},
+{
+    "title": "Beef Tacos",
+    "ingredients": "Tortillas, Spiced Beef, Salsa, Cheese, Guacamole",
+    "instructions": "Cook spiced beef, warm tortillas, and assemble with toppings of choice.",
+    "prep": 15,
+    "cook": 10,
+    "image_url": "images/Beef-tacos.jpg"
+},
+{
+    "title": "Chicken Tikka Masala",
+    "ingredients": "Chicken, Yogurt, Spices, Tomato Sauce, Cream",
+    "instructions": "Marinate chicken in yogurt and spices. Grill chicken pieces. Prepare sauce with tomatoes and spices. Combine chicken with sauce and serve.",
+    "prep": 25,
+    "cook": 40,
+    "image_url": "images/Chicken-tikka.jpg"
+}
   
   ]
   

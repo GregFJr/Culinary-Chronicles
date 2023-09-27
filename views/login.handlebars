@@ -3,6 +3,12 @@
   <main class="main-log-container">
     <section class="login">
 <h1>Login</h1>
+{{#if errorMessage}}
+    <div class="alert alert-danger">
+        {{errorMessage}}
+    </div>
+{{/if}}
+
 <form action="/login" method="post">
     <div class="input-wrapper">
         <label for="username">Username:</label>
@@ -37,7 +43,7 @@
     </div>
     <div>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="pass" name="password">
     </div>
     <div>
         <button type="submit">Signup</button>
