@@ -15,28 +15,28 @@ app.get('/login', (req, res) => {
     }
 });
 
-// app.post('/login', (req, res) => {
-//     const { firstName, lastName, email, password, newsLetter } = req.body;
-//     const userExists = users.some(user => user.email === email);
-//         userExists = users.some(user => user.password == password);
+app.post('/signup', (req, res) => {
+    const { firstName, lastName, email, password, newsLetter } = req.body;
+    const userExists = users.some(user => user.email === email);
+        userExists = users.some(user => user.password == password);
         
 
-//     if (userExists) {
-//         return res.status(400).send('User already exists');
-//     }
-//     const newUser = {
-//         firstName,
-//         lastName,
-//         email,
-//         password,
-//         newsLetter: !!newsLetter,
-//     };
+    if (userExists) {
+        return res.status(400).send('User already exists');
+    }
+    const newUser = {
+        firstName,
+        lastName,
+        email,
+        password,
+        newsLetter: !!newsLetter,
+    };
 
-//     users.push(newUser);
+    users.push(newUser);
 
-//     res.redirect('/');
+    res.redirect('/');
 
-// });
+});
 
 app.post('/login', async (req, res) => {
     try {
@@ -58,9 +58,4 @@ app.post('/login', async (req, res) => {
     } catch (err) {
         res.status(400).json(err);
     }
-
-
-
-
-
-});
+}); // this checks the db for the email and password. if they match, it logs them in. if not, it sends an error message
