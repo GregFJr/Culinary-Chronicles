@@ -30,5 +30,13 @@ router.get('/recipe/:id', async (req, res) => {
     }
 });
 
+router.get('/about', (req, res) => {
+    res.render('about');
+});
+
+router.get('/drinks', (req, res) => {
+    res.render('drinks');
+});
+
 router.use(userRoutes);
 module.exports = router;

@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.drinksBody {
+    background-image: url(/images/homepage2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.drinksHeading {
+    font-family: 'Sacramento', cursive;
+    color:#FFD700;
+    font-size: 80px;
+    text-decoration: none;
+}
