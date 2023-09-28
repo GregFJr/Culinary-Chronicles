@@ -1,9 +1,10 @@
 .login-body {
-    background-image: url('/images/login.jpg');
+    background-image: url('/images/login4.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
     color: #000;
     height: 100%;
     
