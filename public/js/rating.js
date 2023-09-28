@@ -71,7 +71,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-document.getElementById('commentBtn').addEventListener('click', function() {
-    document.getElementById('ratingForm').submit();
-});
