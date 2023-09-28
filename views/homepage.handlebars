@@ -15,27 +15,33 @@
     <span class="star" data-rating="3">☆</span>
     <span class="star" data-rating="4">☆</span>
     <span class="star" data-rating="5">☆</span>
- </div>
+ 
 
 <input type="hidden" name="value" id="ratingValue">
 <input type="hidden" name="recipe_id" value="{{this.id}}">
-
+</div>
 
 <button type="button" id="commentButton">Leave a Comment</button>
 <button id="submitRating">Submit Rating</button>
-</form>  
-            
-    </div>
-    {{/each}}
-</div>
+
 <!-- The Modal -->
 <div id="commentModal" class="modal">
   <div class="modal-content">
     <span class="close-button">&times;</span>
     <h2>Leave a Comment</h2>
-    <textarea placeholder="Type your comment here..."></textarea>
+    <textarea name="comment" id="comment" placeholder="Type your comment here..."></textarea>
     <button class="submit-comment" id="commentBtn">Submit</button>
   </div>
+</div>
+
+
+
+
+
+
+</form>  
+</div>
+    {{/each}}
 </div>
 
 

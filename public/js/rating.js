@@ -1,29 +1,30 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const ratings = document.querySelectorAll('.rating');
+document.querySelector('body').addEventListener('click', function(e) {
+    if (e.target.classList.contains('star')) {
+        const rating = e.target.getAttribute('data-rating');
+        const parentRatingDiv = e.target.closest('.rating');
+        const ratingInput = parentRatingDiv.querySelector('#ratingValue');
 
-    ratings.forEach(rating => {
-        rating.addEventListener('click', function (e) {
-            if (e.target.classList.contains('star')) {
-                const clickedStarRating = parseInt(e.target.getAttribute('data-rating'));
-                const stars = this.querySelectorAll('.star');
 
-                stars.forEach(star => {
-                    if (parseInt(star.getAttribute('data-rating')) <= clickedStarRating) {
-                        star.style.color = 'gold';
-                    } else {
-                        star.style.color = 'black';
-                    }
-                });
+        ratingInput.value = rating;
+        
+
+        const stars = parentRatingDiv.querySelectorAll('.star');
+        stars.forEach(star => {
+            if (parseInt(star.getAttribute('data-rating')) <= parseInt(rating)) {
+                star.style.color = 'gold';
+            } else {
+                star.style.color = 'black';
             }
-
         });
-    });
+    }
 });
+
 
 document.querySelectorAll('.star').forEach(star => {
     star.addEventListener('click', function(e) {
         const rating = e.target.getAttribute('data-rating');
         document.getElementById('ratingValue').value = rating;
+        console.log('Rating set to:', rating);
     });
 });
 
