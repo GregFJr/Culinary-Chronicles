@@ -5,10 +5,6 @@ const bcrypt = require('bcrypt');
 
 
 passport.use(new LocalStrategy(
-    // {
-    //     usernameField: 'username',
-    //     passwordField: 'password'
-    // },
     async (username, password, done) => {
         try {
             const userData = await User.findOne({ where: { username: username } });
@@ -22,7 +18,7 @@ passport.use(new LocalStrategy(
 
             
             if (!isValidPassword) {
-                return done(null, false, { message: 'Incorrect username or password!' });
+                return done(null, false, { message: 'Incorrect password!' });
             }
             
             return done(null, userData);

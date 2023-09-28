@@ -5,7 +5,7 @@ const { User, Rating } = require("../models");
 
 router.post('/login', passport.authenticate('local', {
     successRedirect: '/',
-    failureRedirect: '/',
+    failureRedirect: '/login',
     failureFlash: true
   }));
   
@@ -48,7 +48,6 @@ router.get('/users', async (req, res) => {
 
 router.post('/signup', async (req, res) => {
   const { firstname, lastname, username, password } = req.body;
-
   try {
     const user = await User.create({
       username,

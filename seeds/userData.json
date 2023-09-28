@@ -26,5 +26,12 @@
     "firstname": "Jane",
     "lastname": "Doe",
     "email": "janedoe45@gmail.com"
+  },
+  {
+    "username": "janedoe48@gmail.com",
+    "password": "password123ABC!",
+    "firstname": "Jane",
+    "lastname": "Doe",
+    "email": "janedoe48@gmail.com"
   }
 ]
