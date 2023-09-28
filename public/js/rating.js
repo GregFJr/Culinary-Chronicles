@@ -50,24 +50,24 @@ document.querySelectorAll('.star').forEach(star => {
         }
     });
 
-// Get the modal, button, and close elements
-var modal = document.getElementById("commentModal");
-var btn = document.getElementById("commentButton"); // Assuming you have a button with this ID to trigger the modal
-var span = document.getElementsByClassName("close-button")[0];
+document.querySelectorAll('.recipe-card').forEach(card => {
+    const recipeId = card.querySelector('input[name="recipe_id"]').value;
 
-// Open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+    card.querySelector(`#commentButton-${recipeId}`).onclick = function() {
+        document.getElementById(`commentModal-${recipeId}`).style.display = "block";
+    }
 
-// Close the modal when 'x' is clicked
-span.onclick = function() {
-  modal.style.display = "none";
-}
+    // Close the modal when 'x' is clicked
+    card.querySelector('.close-button').onclick = function() {
+        document.getElementById(`commentModal-${recipeId}`).style.display = "none";
+    }
+});
 
 // Close the modal if anywhere outside of the modal content is clicked
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
 }
+
+

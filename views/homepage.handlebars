@@ -21,11 +21,11 @@
 <input type="hidden" name="recipe_id" value="{{this.id}}">
 </div>
 
-<button type="button" id="commentButton">Leave a Comment</button>
+<button type="button" id="commentButton-{{this.id}}">Leave a Comment</button>
 <button id="submitRating">Submit Rating</button>
 
 <!-- The Modal -->
-<div id="commentModal" class="modal">
+<div id="commentModal-{{this.id}}" class="modal">
   <div class="modal-content">
     <span class="close-button">&times;</span>
     <h2>Tell Us What You Think!</h2>
