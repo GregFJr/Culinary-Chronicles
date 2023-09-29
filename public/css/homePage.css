@@ -93,6 +93,11 @@ nav li a:hover{
 
 .nav-greet {
     color: #fff;
+    font-size: 22px;
+}
+
+.fas {
+    color: #fff;
 }
 
 .recipe-detail {
@@ -213,6 +218,17 @@ input[type="radio"]:checked ~ .star {
     margin: 10px;
     font-family: 'Pacifico', cursive;
 
+}
+
+.success-message {
+    display: none;
+    font-family: 'Pacifico', cursive;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
 

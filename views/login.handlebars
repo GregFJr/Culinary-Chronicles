@@ -1,61 +1,58 @@
 <body class="login-body">
-        <h1 class="greeting">Welcome to <span>Culinary Chronicles</span></h1>
+  <h1 class="greeting">Welcome to <span>Culinary Chronicles</span></h1>
   <main class="main-log-container">
     <section class="login">
-<h1>Login</h1>
-{{#if errorMessage}}
-    <div class="alert alert-danger">
-        {{errorMessage}}
-    </div>
-{{/if}}
+      <h1>Login</h1>
+      {{#if errorMessage}}
+        <div class="alert alert-danger">
+          {{errorMessage}}
+        </div>
+      {{/if}}
 
-<form action="/login" method="post">
-    <div class="input-wrapper">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-    </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-    </div>
-    <div>
-        <button type="submit">Login</button>
-    </div>
-</form>
-</section> 
+      <form action="/login" method="post">
+        <div class="input-wrapper">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </section>
 
     <div class="vl"></div>
 
-<section class="signup" id="signupForm"> 
-<h1>Signup</h1>
-<form action="/signup" method="post">
-    <div>
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname">
-    </div>
-    <div>
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname">
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="username">
-    </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" id="pass" name="password">
-    </div>
-    <div>
-        <button type="submit">Signup</button>
-    </div>
-    <div class="promotion">
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Signup for our Newsletter?</label>
-    </div>
-</form>
-</section> 
-</main>
+    <section class="signup" id="signupForm">
+      <h1>Signup</h1>
+      <form action="/signup" method="post">
+        <div>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" />
+        </div>
+        <div>
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="username" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="pass" name="password" />
+        </div>
+        <div>
+          <button type="submit">Signup</button>
+        </div>
+        <div class="promotion">
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          <label for="newsletter">Signup for our Newsletter?</label>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
-
-
-

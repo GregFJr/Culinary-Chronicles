@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { registerDecorator } = require('handlebars');
 const { Rating } = require('../models');
 
 router.post('/', async (req, res) => {
@@ -6,9 +7,11 @@ router.post('/', async (req, res) => {
     try {
         const value = parseFloat(req.body.value);
         
-        // Validating the rating value, mostly for testing purposes
+        // Error handling for if a user tries to rate a recipe with a star value
         if (isNaN(value) || value < 1 || value > 5) {
-            return res.status(400).json({ error: 'Invalid rating value' });
+            req.flash('error', 'Please rate before submission.');
+            
+            return res.redirect('/');
         }
 
         const newRating = await Rating.create({
@@ -17,7 +20,7 @@ router.post('/', async (req, res) => {
             comment: req.body.comment,
             user_id: req.session.user_id
         });
-        
+
         res.redirect('/');
     } catch (err) {
         res.status(400).json(err);

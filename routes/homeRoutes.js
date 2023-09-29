@@ -12,9 +12,15 @@ router.get('/', async (req, res) => {
         const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
         const user = req.user ? req.user.get({ plain: true }) : null;
 
+        const messages = {
+            success: req.flash('success'),
+            error: req.flash('error')
+        }
+
         res.render('homepage', { 
             recipes,
-            user: user
+            user: user,
+            messages,
          });
     } catch (err) {
         console.error("Database error:", error);
