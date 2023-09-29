@@ -19,3 +19,13 @@ body, html {
     font-size: 80px;
     text-decoration: none;
 }
+
+.cardContainer {
+    font-family: 'Sacramento', cursive;
+    color: #FFD700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
