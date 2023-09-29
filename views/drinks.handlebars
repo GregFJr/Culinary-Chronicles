@@ -1,5 +1,43 @@
 <body class="drinksBody">
 {{> navbar }}
 <h1 class="drinksHeading">Drinks</h1>
+<div class="drinks-container">
+    {{#each drinks}}
+       <div class="drinks-card">
+        <a href="/drinks/{{this.id}}" class="drinks-link">
+            <img src="{{this.image_url}}" alt="{{this.title}}" class="drinks-img">
+            <h3>{{this.title}}</h3>
+          </a>  
+<form action="/ratings" method="post" id="ratingForm">        
+<div class="rating" data-recipe-id="{{recipe.id}}">
+    <span class="star" data-rating="1">☆</span>
+    <span class="star" data-rating="2">☆</span>
+    <span class="star" data-rating="3">☆</span>
+    <span class="star" data-rating="4">☆</span>
+    <span class="star" data-rating="5">☆</span>
+ 
 
-</body>
+<input type="hidden" name="value" id="ratingValue">
+<input type="hidden" name="recipe_id" value="{{this.id}}">
+</div>
+
+<button type="button" id="commentButton-{{this.id}}">Leave a Comment</button>
+<button id="submitRating">Submit Rating</button>
+
+<!-- The Modal -->
+<div id="commentModal-{{this.id}}" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Tell Us What You Think!</h2>
+    <textarea name="comment" id="comment" placeholder="Type your comment here..."></textarea>
+    <button class="submit-comment" id="commentBtn">Submit</button>
+  </div>
+</div>
+</form>  
+</div>
+    {{/each}}
+</div>
+
+
+
+<script src="/js/rating.js"></script>

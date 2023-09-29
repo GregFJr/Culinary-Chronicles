@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Mojito",
+        "ingredients": "Rum, Lime, Mint, Sugar, Soda Water",
+        "instructions": "Muddle mint leaves with sugar and lime juice. Add rum and soda water. Garnish with mint leaves and lime wedge.",
+        "prep": 10,
+        "image_url": "images/mojito.jpg"
+    },
+    {
+        "title": "Margarita",
+        "ingredients": "Crushed Ice, Tequila, Triple Sec, Lime Juice",
+        "instructions": "Shake ingredients with ice. Strain into glass with salted rim. Garnish with lime wedge.",
+        "prep": 8,
+        "image_url": "images/margarita.jpg"
+    },
+    {
+        "title": "Bloody Mary",
+        "ingredients": "Vodka, Tomato Juice, Lemon Juice, Worcestershire Sauce, Tabasco, Celery Salt, Pepper",
+        "instructions": "Shake ingredients with ice. Strain into glass with ice. Garnish with celery stick.",
+        "prep": 12,
+        "image_url": "images/bloodymary.jpg"
+    },
+    {
+        "title": "Pina Colada",
+        "ingredients": "Crushed Ice, Rum, Coconut Cream, Pineapple Juice",
+        "instructions": "Blend ingredients with ice. Strain into glass. Garnish with pineapple wedge.",
+        "prep": 10,
+        "image_url": "images/pinacolada.jpg"
+    },
+    {
+        "title": "Mimosa",
+        "ingredients": "Champagne, Orange Juice",
+        "instructions": "Pour orange juice into glass. Top with champagne.",
+        "prep": 5,
+        "image_url": "images/mimosa.jpg"
+    },
+    {
+        "title": "Mai Tai",
+        "ingredients": "Crushed Ice, Rum, Triple Sec, Lime Juice, Orgeat Syrup",
+        "instructions": "Shake ingredients with ice. Strain into glass with ice. Garnish with pineapple wedge.",
+        "prep": 8,
+        "image_url": "images/maitai.jpg"
+    }
+]

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Recipe } = require('../models');
 const userRoutes = require('./userRoutes');
+const { Drinks } = require('../models');
 
 router.get('/', async (req, res) => {
     try {
@@ -34,8 +35,15 @@ router.get('/about', (req, res) => {
     res.render('about');
 });
 
-router.get('/drinks', (req, res) => {
-    res.render('drinks');
+router.get('/drinks', async (req, res) => {
+    try {
+        const drinkData = await Drinks.findAll();
+        const drinks = drinkData.map((drink) => drink.get({ plain: true }));
+        res.render('drinks', { drinks });
+    } catch (err) {
+        console.error("Database error:", error);
+        res.status(500).json(err);
+    }
 });
 
 router.use(userRoutes);
