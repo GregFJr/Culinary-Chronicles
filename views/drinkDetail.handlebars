@@ -1,0 +1,18 @@
+<body class="drink-detail-bg">
+{{> navbar }}
+<main class="recipe-detail-main">
+<h1>{{ drink.title }}</h1>
+<img src="{{ drink.image_url }}" alt="{{ drink.title }}" class="recipe-detail-img">
+<div class="recipe-detail-cook">
+    <div class="prep">
+        <span class="recipe-detail-time"><strong>Prep:</strong> {{ drink.prep }} mins</span>
+        <span class="recipe-detail-time"><strong>Cook:</strong> {{ drink.cook }} mins</span>
+    </div>
+<div class="recipe-detail-ins"><p class="recipe-detail"><strong>Ingredients:</strong> {{ drink.ingredients }}</p></div>
+<div class="recipe-detail-ins"><p class="recipe-detail"><strong>Instructions:</strong> {{ drink.instructions }}</p></div>
+</div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/recipeDetail.js"></script>
+</body>

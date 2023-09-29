@@ -54,9 +54,46 @@ document.querySelectorAll(".recipe-card").forEach((card) => {
   };
 });
 
-// Close the modal if anywhere outside of the modal content is clicked
+// Close the modal if anywhere outside of the modal is clicked
 window.onclick = function (event) {
   if (event.target.classList.contains("modal")) {
     event.target.style.display = "none";
   }
 };
+
+
+document.querySelectorAll(".drinks-card").forEach((card) => {
+    const drinkId = card.querySelector('input[name="recipe_id"]').value;
+  
+    // Open the modal
+    card.querySelector(`#commentButton-${drinkId}`).onclick = function () {
+      document.getElementById(`commentModal-${drinkId}`).style.display = "block";
+    };
+  
+    // Submit the comment
+    card.querySelector(".submit-comment").onclick = function () {
+  
+      // After successful submission:
+      const successMessage = document.getElementById(
+        `successMessage-${drinkId}`
+      );
+      successMessage.style.display = "block";
+      setTimeout(() => {
+        successMessage.style.display = "none"; 
+      }, 2000);
+  
+    };
+  
+    // Close the modal when 'x' is clicked
+    card.querySelector(".close-button").onclick = function () {
+      document.getElementById(`commentModal-${drinkId}`).style.display = "none";
+    };
+  });
+  
+  // Close the modal if anywhere outside of the modal content is clicked
+  window.onclick = function (event) {
+    if (event.target.classList.contains("modal")) {
+      event.target.style.display = "none";
+    }
+  };
+  

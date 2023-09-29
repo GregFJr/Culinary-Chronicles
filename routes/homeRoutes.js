@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { Recipe } = require('../models');
+const { Recipe, Drinks } = require('../models');
 const userRoutes = require('./userRoutes');
-const { Drinks } = require('../models');
+
 
 router.get('/', async (req, res) => {
     console.log("Is user authenticated:", req.isAuthenticated());
@@ -44,7 +44,8 @@ router.get('/recipe/:id', async (req, res) => {
 });
 
 router.get('/about', (req, res) => {
-    res.render('about');
+    const user = req.user ? req.user.get({ plain: true }) : null;
+    res.render('about', { user: user });
 });
 
 router.get('/drinks', async (req, res) => {
@@ -53,9 +54,29 @@ router.get('/drinks', async (req, res) => {
             limit: 12
         });
         const drinks = drinkData.map((drink) => drink.get({ plain: true }));
-        res.render('drinks', { drinks });
+        const user = req.user ? req.user.get({ plain: true }) : null;
+        res.render('drinks', { 
+            drinks,
+            user: user,
+         });
     } catch (err) {
         console.error("Database error:", error);
+        res.status(500).json(err);
+    }
+});
+
+
+router.get('/drink/:id', async (req, res) => {
+    try {
+        const drinksData = await Drinks.findByPk(req.params.id);
+        if (!drinksData) {
+            res.status(404).json({ message: 'No drink found with this id!' });
+            return;
+        }
+        const drink = drinksData.get({ plain: true });
+        console.log(drink.image_url);
+        res.render('drinkDetail', { drink });
+    } catch (err) {
         res.status(500).json(err);
     }
 });

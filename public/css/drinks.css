@@ -4,7 +4,17 @@ body, html {
 }
 
 .drinksBody {
-    background-image: url(/images/homepage3.jpg);
+    background-image: url(/images/drinks2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.drink-detail-bg {
+    background-image: url('/images/drinks.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
