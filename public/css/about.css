@@ -36,6 +36,10 @@ body, html {
     overflow-wrap: break-word;
 }
 
+.card {
+    min-height: 690px;
+}
+
 .mission {
     display: flex;
     justify-content: center;
