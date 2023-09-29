@@ -49,7 +49,9 @@ router.get('/about', (req, res) => {
 
 router.get('/drinks', async (req, res) => {
     try {
-        const drinkData = await Drinks.findAll();
+        const drinkData = await Drinks.findAll({
+            limit: 12
+        });
         const drinks = drinkData.map((drink) => drink.get({ plain: true }));
         res.render('drinks', { drinks });
     } catch (err) {

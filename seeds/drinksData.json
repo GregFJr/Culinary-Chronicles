@@ -40,5 +40,48 @@
         "instructions": "Shake ingredients with ice. Strain into glass with ice. Garnish with pineapple wedge.",
         "prep": 8,
         "image_url": "images/maitai.jpg"
+    },
+    {
+        "title": "Cosmopolitan",
+        "ingredients": "Vodka, Triple Sec, Cranberry Juice, Lime Juice",
+        "instructions": "Shake ingredients with ice. Strain into chilled martini glass. Garnish with a lime wheel.",
+        "prep": 7,
+        "image_url": "images/cosmo.jpg"
+    },
+    {
+        "title": "Old Fashioned",
+        "ingredients": "Bourbon, Sugar Cube, Angostura Bitters, Club Soda, Orange Slice, Cherry",
+        "instructions": "Muddle sugar cube, bitters, and one splash of club soda. Add bourbon, ice cubes, and stir. Garnish with an orange slice and cherry.",
+        "prep": 10,
+        "image_url": "images/old.jpg"
+    },
+    {
+        "title": "Whiskey Sour",
+        "ingredients": "Whiskey, Lemon Juice, Sugar",
+        "instructions": "Shake ingredients with ice. Strain into glass with ice. Garnish with a cherry and lemon slice.",
+        "prep": 8,
+        "image_url": "images/sour.jpg"
+    },
+    {
+        "title": "Tequila Sunrise",
+        "ingredients": "Tequila, Orange Juice, Grenadine",
+        "instructions": "Pour tequila and orange juice into glass over ice. Add grenadine, which will sink to the bottom. Stir gently to create the sunrise effect.",
+        "prep": 7,
+        "image_url": "images/tequila.jpg"
+    },
+    {
+        "title": "Martini",
+        "ingredients": "Gin or Vodka, Dry Vermouth, Lemon twist or Olive",
+        "instructions": "Stir or shake ingredients with ice. Strain into chilled martini glass. Garnish with a lemon twist or olive.",
+        "prep": 6,
+        "image_url": "images/martini.jpg"
+    },
+    {
+        "title": "Daiquiri",
+        "ingredients": "Rum, Lime Juice, Sugar",
+        "instructions": "Shake ingredients with ice. Strain into glass. Garnish with a lime wheel.",
+        "prep": 7,
+        "image_url": "images/daiquiri.jpg"
     }
+    
 ]
