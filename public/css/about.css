@@ -34,6 +34,16 @@ body, html {
 .cardInfo {
     inline-size: 400px;
     overflow-wrap: break-word;
+}
 
-    
+.mission {
+    display: flex;
+    justify-content: center;
+    color:#FFD700;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    margin-left: 60px; 
+    margin-right: 60px;
+    background-color: rgba(0, 0, 0, 0.538);
+    border-radius: 10px;
 }
