@@ -4,16 +4,18 @@ A recipe website built with Handlebars for the front end, MySQL and Sequelize fo
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Questions](#questions)
+- [Culinary Chronicles](#culinary-chronicles)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
 
 
 ## Installation
 
-No need to install navigate to : <!--Heroku link goes here -!>
+No need to install navigate to : [Heroku]()
 
 ## Usage
 
@@ -26,9 +28,9 @@ This project is licensed under the MIT License.
 
 ## Contributing
 
-![Jose Guillen](https://github.com/Exo-MDR-CD2000)
-![Gregory Finney](https://github.com/GregFJr)
-![Matt Velazquez](https://github.com/mattscodingcorner)
+- [Jose Guillen](https://github.com/Exo-MDR-CD2000)
+- [Gregory Finney](https://github.com/GregFJr)
+- [Matt Velazquez](https://github.com/mattscodingcorner)
 
 
 ## Questions
