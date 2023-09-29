@@ -17,8 +17,8 @@ router.post('/', async (req, res) => {
             comment: req.body.comment,
             user_id: req.session.user_id
         });
-
-        res.status(200).json(newRating);
+        
+        res.redirect('/');
     } catch (err) {
         res.status(400).json(err);
     }
