@@ -91,6 +91,10 @@ nav li a:hover{
     padding: 10px;
 }
 
+.nav-greet {
+    color: #fff;
+}
+
 .recipe-detail {
     font-size: 22px;
 }

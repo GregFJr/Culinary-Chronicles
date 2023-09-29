@@ -2,12 +2,17 @@
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/Recipes">Recipe</a></li>
+        <li><a href="/">Recipe</a></li>
         <li><a href="/Drinks">Drinks</a></li>
     </ul>
+<div>
+    {{#if user}}
+  <span class="nav-greet">Hello, {{user.firstname}}!</span>
+    {{/if}}
 
-    <div>
-        <a href=""><span class="nav-link">View My Recipes</span></a>
+
+        <a href="/"><span class="nav-link">View My Recipes</span></a>
         <a href="/login"><span class="nav-link">Logout</span></a>
     </div>
 </nav>
+

@@ -45,23 +45,31 @@ router.get('/users', async (req, res) => {
 
 
 //handles the signup route
-
 router.post('/signup', async (req, res) => {
-  const { firstname, lastname, username, password } = req.body;
-  try {
-    const user = await User.create({
-      username,
-      password,
-      firstname,
-      lastname,
-      email: username
-    });
-    await user.save();
-    res.redirect('/login');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
+    const { firstname, lastname, username, password } = req.body;
+    try {
+      const user = await User.create({
+        username,
+        password,
+        firstname,
+        lastname,
+        email: username
+      });
+      await user.save();
+  
+      req.login(user, function(err) {
+        if (err) {
+          console.error(err);
+          return res.status(500).send('Internal Server Error during authentication');
+        }
+        return res.redirect('/');
+      });
+  
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Internal Server Error');
+    }
+  });
+  
 
 module.exports = router;

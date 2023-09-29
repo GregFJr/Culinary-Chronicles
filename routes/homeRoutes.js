@@ -3,13 +3,19 @@ const { Recipe } = require('../models');
 const userRoutes = require('./userRoutes');
 
 router.get('/', async (req, res) => {
+    console.log("Is user authenticated:", req.isAuthenticated());
+    console.log("User data:", req.user);
     try {
         const recipeData = await Recipe.findAll({
             limit: 12
         });
         const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
-        console.log(recipes);
-        res.render('homepage', { recipes });
+        const user = req.user ? req.user.get({ plain: true }) : null;
+
+        res.render('homepage', { 
+            recipes,
+            user: user
+         });
     } catch (err) {
         console.error("Database error:", error);
         res.status(500).json(err);
