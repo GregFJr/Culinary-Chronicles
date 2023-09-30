@@ -36,7 +36,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.use(session({ secret: 'superSecret', resave: true, saveUninitialized: true, store: store }));
+app.use(session({ 
+ secret: 'superSecret',
+ resave: true,
+ saveUninitialized: true,
+ store: store,
+ cookie: {
+   maxAge: 30 * 60 * 1000,
+  }
+}));
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
@@ -44,6 +52,7 @@ app.use(passport.session());
 store.sync()
 
 app.use((req, res, next) => {
+  console.log("req.user:", req.user);
   res.locals.user = req.user;
   next();
 });

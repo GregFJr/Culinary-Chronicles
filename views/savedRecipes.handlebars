@@ -1,10 +1,26 @@
 <body class="saveBody">
     {{> navbar }}
+    {{!-- <main class="main-save">
+        <div class="saved-banner">
+            <h1>Coming Soon</h1>
+        </div>
+    </main> --}}
+
     <main class="main-save">
-    <div class="saved-banner">
-    <h1>Coming Soon</h1>
-    </div>
+        <h2>Your Saved Recipes</h2>
+
+        {{#if savedRecipes}}
+        <ul>
+            {{#each savedRecipes}}
+            <li>
+                <h3>{{savedRecipes.title}}</h3>
+                <p>Ingredients: {{savedRecipes.ingredients}}</p>
+                <p>Instructions: {{Recipe.instructions}}</p>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>You haven't saved any recipes yet.</p>
+        {{/if}}
     </main>
 </body>
-
-    

@@ -61,6 +61,7 @@ window.onclick = function (event) {
   }
 };
 
+//for drink selectors, still need further updates but will work for demo purposes
 
 document.querySelectorAll(".drinks-card").forEach((card) => {
     const drinkId = card.querySelector('input[name="recipe_id"]').value;
