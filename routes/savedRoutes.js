@@ -16,18 +16,25 @@ router.post("/saved-recipe", async (req, res) => {
   }
 });
 
-router.delete("/:recipeId", async (req, res) => {
+router.delete("/saved-recipe/:id", async (req, res) => {
+  console.log(req.params.id);
   try {
     await SavedRecipes.destroy({
       where: {
-        user_id: req.session.user_id,
-        recipe_id: req.params.recipeId,
+        id: req.params.id,
+        user_id: req.user.id,
       },
     });
-    res.status(200).json({ message: "Recipe removed from saved list!" });
-  } catch (err) {
-    res.status(400).json(err);
-  }
+
+        
+    if (result) {
+        res.status(200).json({ message: "Recipe deleted successfully!" });
+    } else {
+        res.status(400).json({ message: "No recipe found with this ID for the current user." });
+    }
+} catch (err) {
+    res.status(500).json({ message: "Internal server error.", error: err.message });
+}
 });
 
 //This route is for the user to view their saved recipes. work in progress.
@@ -41,7 +48,7 @@ router.get("/saved-recipes", async (req, res) => {
       where: {
         user_id: req.user.id,
       },
-      include: [Recipe],
+      include: [Recipe, Rating],
     });
 
     const savedRecipes = savedData.map((data) => data.get({ plain: true }));

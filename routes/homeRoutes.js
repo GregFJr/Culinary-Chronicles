@@ -5,8 +5,8 @@ const userRoutes = require('./userRoutes');
 
 router.get('/', async (req, res) => {
     //For testing do not delete
-    console.log("Is user authenticated:", req.isAuthenticated());
-    console.log("User data:", req.user);
+    // console.log("Is user authenticated:", req.isAuthenticated());
+    // console.log("User data:", req.user);
 
     if (!req.isAuthenticated()) {
         return res.redirect('/login');
@@ -43,8 +43,12 @@ router.get('/recipe/:id', async (req, res) => {
             return;
         }
         const recipe = recipeData.get({ plain: true });
+        const user = req.user ? req.user.get({ plain: true }) : null;
         console.log(recipe.image_url);
-        res.render('recipe', { recipe });
+        res.render('recipe', { 
+            recipe,
+            user: user
+         });
     } catch (err) {
         res.status(500).json(err);
     }

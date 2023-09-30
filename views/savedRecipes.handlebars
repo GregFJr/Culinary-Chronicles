@@ -5,22 +5,29 @@
             <h1>Coming Soon</h1>
         </div>
     </main> --}}
-
+    <h1>View your favorite Recipes, {{user.firstname}}</h1>
     <main class="main-save">
         <h2>Your Saved Recipes</h2>
 
+
         {{#if savedRecipes}}
-        <ul>
+        <div class="recipes-container"> 
             {{#each savedRecipes}}
-            <li>
-                <h3>{{savedRecipes.title}}</h3>
-                <p>Ingredients: {{savedRecipes.ingredients}}</p>
-                <p>Instructions: {{Recipe.instructions}}</p>
-            </li>
+        <div class="recipe-card">
+          <a href="/recipe/{{this.recipe.id}}" class="recipe-link">
+            <img src="{{this.recipe.image_url}}" alt="{{this.recipe.title}}" class="recipe-img">
+            <h3>{{this.recipe.title}}</h3>
+            {{#if this.rating}}
+                <p>Rating: {{rating.value}}</p>
+            {{/if}}
+          </a>  
+            <button class="delete-btn" data-id="{{this.id}}">Delete</button>
+        </div>
             {{/each}}
-        </ul>
+        </div>
         {{else}}
         <p>You haven't saved any recipes yet.</p>
         {{/if}}
     </main>
 </body>
+    <script src="/js/saveRecipe.js"></script>

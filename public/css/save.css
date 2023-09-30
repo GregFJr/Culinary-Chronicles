@@ -6,17 +6,23 @@
     background-position: center center;
     height: 100%;
     width: 100%;
-    
+}
 
-    
+.saveBody h1 {
+    color: #D35400;
+    text-decoration: none;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 10%;
 }
 
 .main-save {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: #ffb400;
-    font-family: 'Sacramento', cursive;
+    /* font-family: 'Sacramento', cursive; */
 }
 
 .saved-banner h1 {
@@ -25,3 +31,41 @@
     margin: 50% 0 0 0;
     
 }
+
+.saveBody button {
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 8px;
+    color: #D35400;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+@keyframes fadeInOut {
+    0% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.saved-feedback {
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+
+.saved-feedback.active {
+    display: inline-block;
+    animation: fadeInOut 2s forwards;
+    text-align: center;
+}
+

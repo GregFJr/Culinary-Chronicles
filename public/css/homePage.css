@@ -116,10 +116,18 @@ nav li a:hover{
 }
 
 .star {
-    color: #000;  /* default color */
     cursor: pointer;
-    font-size: 30px;
-    padding: 0 5px;
+    font-size: 24px;
+}
+
+.star.outlined {
+    color: black;
+    content: "☆"; 
+}
+
+.star.filled {
+    color: gold;
+    content: "★"; 
 }
 
 input[type="radio"]:hover ~ .star,
@@ -234,10 +242,8 @@ input[type="radio"]:checked ~ .star {
 .coming-soon {
     color: #D35400
 }
-.save-button {
-    opacity: 0.5;       
-    cursor: not-allowed;   
-    background-color: #ccc;
+.recipe-card .save-button {
+    background-color: #525200;
 }
 
 
