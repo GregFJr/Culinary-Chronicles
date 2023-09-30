@@ -77,7 +77,7 @@
       "instructions": "Cook the spaghetti. Mix eggs and cheese. Fry pancetta. Combine all with pepper.",
       "prep": 15,
       "cook": 20,
-      "image_url": "images/SpaghettiCarb.jpg"
+      "image_url": "/images/SpaghettiCarb.jpg"
   },
   {
     "title": "Margherita Pizza",
@@ -85,7 +85,7 @@
     "instructions": "Roll out dough, spread sauce, add slices of mozzarella, bake until golden, and garnish with fresh basil.",
     "prep": 20,
     "cook": 15,
-    "image_url": "images/Margherita-pizza.jpg"
+    "image_url": "/images/Margherita-pizza.jpg"
 },
 {
     "title": "Beef Tacos",
@@ -93,7 +93,7 @@
     "instructions": "Cook spiced beef, warm tortillas, and assemble with toppings of choice.",
     "prep": 15,
     "cook": 10,
-    "image_url": "images/Beef-tacos.jpg"
+    "image_url": "/images/Beef-tacos.jpg"
 },
 {
     "title": "Chicken Tikka Masala",
@@ -101,7 +101,7 @@
     "instructions": "Marinate chicken in yogurt and spices. Grill chicken pieces. Prepare sauce with tomatoes and spices. Combine chicken with sauce and serve.",
     "prep": 25,
     "cook": 40,
-    "image_url": "images/Chicken-tikka.jpg"
+    "image_url": "/images/Chicken-tikka.jpg"
 }
   
   ]

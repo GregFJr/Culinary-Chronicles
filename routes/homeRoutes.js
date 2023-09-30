@@ -38,6 +38,7 @@ router.get('/recipe/:id', async (req, res) => {
             return;
         }
         const recipe = recipeData.get({ plain: true });
+        console.log(recipe.image_url);
         res.render('recipe', { recipe });
     } catch (err) {
         res.status(500).json(err);
