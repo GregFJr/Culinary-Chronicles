@@ -12,6 +12,11 @@ const flash = require('express-flash');
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+const store = new SequelizeStore({
+  db: sequelize,
+});
+
+
 const navbarTemplate = fs.readFileSync('./views/partials/navbar.handlebars', 'utf8');
 
 handlebars.registerPartial('navbar', navbarTemplate); 
@@ -31,10 +36,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.use(session({ secret: 'superSecret', resave: true, saveUninitialized: true }));
+app.use(session({ secret: 'superSecret', resave: true, saveUninitialized: true, store: store }));
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
+
+store.sync()
 
 app.use((req, res, next) => {
   res.locals.user = req.user;

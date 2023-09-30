@@ -8,7 +8,7 @@
             <img src="{{this.image_url}}" alt="{{this.title}}" class="recipe-img">
             <h3>{{this.title}}</h3>
           </a>  
-          <button class="save-button" data-recipe-id="{{this.id}}" disabled>Save (<span class="coming-soon">Coming Soon</span>)</button>
+          <button class="save-button" data-recipe-id="{{this.id}}" >Save (<span class="coming-soon">Coming Soon</span>)</button>
 <form action="/ratings" method="post" id="ratingForm"> 
 {{#if messages.error}}
   <div class="alert alert-danger">
