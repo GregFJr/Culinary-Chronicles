@@ -1,5 +1,4 @@
 const router = require('express').Router();
-// const { registerDecorator } = require('handlebars');
 const { Rating } = require('../models');
 
 router.post('/', async (req, res) => {

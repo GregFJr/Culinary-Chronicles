@@ -27,6 +27,7 @@ router.delete("/:recipeId", async (req, res) => {
   }
 });
 
+//This route is for the user to view their saved recipes. work in progress.
 router.get("/saved-recipes", async (req, res) => {
   // const userId = req.session.user_id;
 

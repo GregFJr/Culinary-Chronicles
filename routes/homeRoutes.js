@@ -7,6 +7,11 @@ router.get('/', async (req, res) => {
     //For testing do not delete
     console.log("Is user authenticated:", req.isAuthenticated());
     console.log("User data:", req.user);
+
+    if (!req.isAuthenticated()) {
+        return res.redirect('/login');
+    }
+
     try {
         const recipeData = await Recipe.findAll({
             limit: 12
