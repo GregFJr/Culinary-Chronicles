@@ -7,6 +7,9 @@ router.post("/saved-recipe", async (req, res) => {
       user_id: req.user.id,
       recipe_id: req.body.recipe_id,
     });
+    // I'm Updating the session with the latest saved recipe ID to mark it as modified, allowing 'resave' to remain 'false'.
+    req.session.lastSavedRecipeId = req.body.recipe_id;
+
     res.status(200).json({ message: "Recipe saved successfully!" });
   } catch (err) {
     res.status(400).json(err);

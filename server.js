@@ -38,7 +38,7 @@ app.set('view engine', 'handlebars');
 
 app.use(session({ 
  secret: 'superSecret',
- resave: true,
+ resave: false,
  saveUninitialized: true,
  store: store,
  cookie: {
