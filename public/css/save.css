@@ -1,0 +1,27 @@
+.saveBody {
+    background-image: url(/images/save.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    
+
+    
+}
+
+.main-save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffb400;
+    font-family: 'Sacramento', cursive;
+}
+
+.saved-banner h1 {
+    text-decoration: none;
+    font-size: 150px;
+    margin: 50% 0 0 0;
+    
+}

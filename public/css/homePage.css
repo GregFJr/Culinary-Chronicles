@@ -206,12 +206,12 @@ input[type="radio"]:checked ~ .star {
     outline: 0;
     display: block;
     padding: 8px;
-    color: white;
+    color: #D35400;
     background-color: #000;
     text-align: center;
     cursor: pointer;
     width: 90%;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -229,6 +229,15 @@ input[type="radio"]:checked ~ .star {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
+}
+
+.coming-soon {
+    color: #D35400
+}
+.save-button {
+    opacity: 0.5;       
+    cursor: not-allowed;   
+    background-color: #ccc;
 }
 
 

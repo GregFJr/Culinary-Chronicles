@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { registerDecorator } = require('handlebars');
+// const { registerDecorator } = require('handlebars');
 const { Rating } = require('../models');
 
 router.post('/', async (req, res) => {
@@ -7,7 +7,7 @@ router.post('/', async (req, res) => {
     try {
         const value = parseFloat(req.body.value);
         
-        // Error handling for if a user tries to rate a recipe with a star value
+        // Error handling for if a user tries to rate a recipe without a star value
         if (isNaN(value) || value < 1 || value > 5) {
             req.flash('error', 'Please rate before submission.');
             

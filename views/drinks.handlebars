@@ -1,13 +1,14 @@
 <body class="drinksBody">
 {{> navbar }}
-<h1 class="drinksHeading">Drinks</h1>
+<h1 class="drinksHeading">Cocktails</h1>
 <div class="drinks-container">
     {{#each drinks}}
        <div class="drinks-card">
         <a href="/drink/{{this.id}}" class="drinks-link">
             <img src="{{this.image_url}}" alt="{{this.title}}" class="drinks-img">
             <h3>{{this.title}}</h3>
-          </a>  
+          </a> 
+          <button class="save-button" data-recipe-id="{{this.id}}">Save (<span class="coming-soon">Coming Soon</span>)</button> 
 <form action="/ratings" method="post" id="ratingForm">        
 <div class="rating" data-recipe-id="{{recipe.id}}">
     <span class="star" data-rating="1">☆</span>

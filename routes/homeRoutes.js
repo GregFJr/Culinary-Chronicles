@@ -4,6 +4,7 @@ const userRoutes = require('./userRoutes');
 
 
 router.get('/', async (req, res) => {
+    //For testing do not delete
     console.log("Is user authenticated:", req.isAuthenticated());
     console.log("User data:", req.user);
     try {
