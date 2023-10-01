@@ -146,3 +146,13 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 920px) {
+   .login-body {
+    overflow: visible;
+   } 
+
+   .main-log-container .login {
+    margin-bottom: 5.6%;
+   }
+}
