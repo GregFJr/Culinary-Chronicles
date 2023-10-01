@@ -85,8 +85,13 @@ router.get('/drink/:id', async (req, res) => {
             return;
         }
         const drink = drinksData.get({ plain: true });
+        const user = req.user ? req.user.get({ plain: true }) : null;
+
         console.log(drink.image_url);
-        res.render('drinkDetail', { drink });
+        res.render('drinkDetail', {
+             drink,
+            user: user,
+        });
     } catch (err) {
         res.status(500).json(err);
     }
