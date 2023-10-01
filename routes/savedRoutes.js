@@ -48,7 +48,7 @@ router.get("/saved-recipes", async (req, res) => {
       where: {
         user_id: req.user.id,
       },
-      include: [Recipe, Rating],
+      include: [Recipe],
     });
 
     const savedRecipes = savedData.map((data) => data.get({ plain: true }));

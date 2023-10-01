@@ -17,9 +17,6 @@
           <a href="/recipe/{{this.recipe.id}}" class="recipe-link">
             <img src="{{this.recipe.image_url}}" alt="{{this.recipe.title}}" class="recipe-img">
             <h3>{{this.recipe.title}}</h3>
-            {{#if this.rating}}
-                <p>Rating: {{rating.value}}</p>
-            {{/if}}
           </a>  
             <button class="delete-btn" data-id="{{this.id}}">Delete</button>
         </div>
