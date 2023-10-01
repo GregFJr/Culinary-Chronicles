@@ -1,16 +1,28 @@
-<nav>
+<nav class="main-nav">
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/">Recipe</a></li>
     <li><a href="/Drinks">Cocktails</a></li>
   </ul>
-  <div>
+  <div class="log-links">
     {{#if user}}
       <span class="nav-greet">Hello, {{user.firstname}}!</span>
     {{/if}}
 
-    <a href="/saved/saved-recipes"><span class="nav-link">View My Recipes</span></a>
+    <a href="/saved/saved-recipes"><span class="nav-link desk-link">View My
+        Recipes</span></a>
     <a href="/login"><span class="nav-link">Logout</span></a>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon">
+        ☰
+      </div>
+      <div class="menu-links">
+        <a href="/saved/saved-recipes"><span>View My Recipes</span></a>
+        <a href="/login"><span>Logout</span></a>
+      </div>
+    </div>
+
   </div>
 </nav>

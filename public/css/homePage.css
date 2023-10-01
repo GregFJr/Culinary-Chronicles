@@ -94,6 +94,7 @@ nav li a:hover{
 .nav-greet {
     color: #fff;
     font-size: 22px;
+    margin-right: 30px;
 }
 
 .fas {
@@ -246,6 +247,65 @@ input[type="radio"]:checked ~ .star {
     background-color: #525200;
 }
 
+.log-links {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*Hamburger*/
+
+.hamburger-menu {
+    position: relative;
+    display: none;
+    width: 50px;
+    color: #fff;
+}
+
+.hamburger-icon {
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.646);
+    border: 1px solid #ccc;
+}
+
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-links a:hover {
+    background-color: rgba(238, 238, 238, 0.59);
+}
+
+
+
+@media  (max-width: 920px) {
+    .main-nav li a {
+        font-size: 35px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .nav-greet {
+        margin-top: 10px;
+    }
+}
 
 
 

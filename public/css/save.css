@@ -1,5 +1,5 @@
 .saveBody {
-    background-image: url(/images/save.jpg);
+    background-image: url(/images/save.jpg) !important;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

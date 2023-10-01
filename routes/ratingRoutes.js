@@ -33,7 +33,8 @@ router.post('/', async (req, res) => {
             });
         }
 
-        res.json({ message: 'Rating saved successfully' });
+    
+        res.redirect('back')
     } catch (err) {
         res.status(400).json(err);
     }
