@@ -295,6 +295,39 @@ input[type="radio"]:checked ~ .star {
 }
 
 
+/*For social recipe view*/
+
+.gold-star {
+    color: gold;
+}
+
+.recipe-detail-social {
+    background-color: rgba(190, 189, 189, 0.856);
+    border-radius: 10px;
+    margin-top: 2%;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+    box-shadow: 0 0 12px #ffb400;
+    margin-right: auto;
+}
+
+.comment-list {
+    padding: 0;
+    padding-right: 10px;
+}
+
+.recipe-detail-social p {
+    font-weight: bold;
+}
+
+.social-cards {
+    margin: 30px;
+    color:#ffb400
+}
+
+
 
 @media  (max-width: 920px) {
     .main-nav li a {

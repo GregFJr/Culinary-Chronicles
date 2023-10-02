@@ -1,0 +1,26 @@
+<body class="recipe-detail-bg">
+    {{>navbar}}
+<main class="recipe-detail-main">
+                    <h1>{{recipe.title}}</h1>
+        <section class="recipe-detail-cook">
+            <img src="{{recipe.image_url}}" alt="{{recipe.title}}" class="recipe-detail-img">
+            <p>{{recipe.description}}</p>
+        </section>
+
+        {{#if recipe.ratings}}
+        <section class="comments-section">
+            <ul class="comment-list">
+                {{#each recipe.ratings}}
+                <li class="recipe-detail-social">
+                    <h3>{{this.user.firstname}} says:</h3>
+                    <p class="recipe-social">Rated: {{this.value}} <span class="gold-star">★</span></p> 
+                    <p class="recipe-social">Comment: {{this.comment}}</p>
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+        {{else}}
+        <p>No comments found for this recipe.</p>
+        {{/if}}
+    </main>
+    </body>
