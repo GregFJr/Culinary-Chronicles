@@ -3,7 +3,7 @@ document.querySelector("body").addEventListener("click", function (e) {
       const rating = e.target.getAttribute("data-rating");
       const parentRatingDiv = e.target.closest(".rating");
       const ratingInput = parentRatingDiv.querySelector("#ratingValue");
-      const recipeId = parentRatingDiv.getAttribute("data-recipe-id"); // Assuming each rating div has a data-recipe-id attribute
+      const recipeId = parentRatingDiv.getAttribute("data-recipe-id");
   
       ratingInput.value = rating;
   

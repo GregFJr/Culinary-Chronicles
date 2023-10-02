@@ -1,6 +1,6 @@
 const sequelize = require('../config/connection');
 const { Recipe } = require('../models');
-const recipeData = require('./recipeData.json');  // Import the JSON data
+const recipeData = require('./recipeData.json');
 const { Drinks } = require('../models');
 const drinksData = require('./drinksData.json');
 
