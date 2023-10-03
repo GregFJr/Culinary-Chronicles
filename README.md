@@ -1,40 +1,67 @@
 # Culinary Chronicles
 
-A recipe website built with Handlebars for the front end, MySQL and Sequelize for the database, Express and Node.js for our RESTful API's, all built around the MVC paradigm. Also incorporates Passport for authentication, see below for usage. 
+Culinary Chronicles is a comprehensive platform where users can discover, rate, and save their favorite recipes. Dive into the world of culinary delights and let others know about your cooking adventures!
+
+![Culinary Chronicles GIF Demo](./public/images/culinarychronicles.gif)
+
+**[Live Application: Culinary Chronicles](https://culinary-chronicle-38d83bbc86cd.herokuapp.com/login)**
 
 ## Table of Contents
 
-- [Culinary Chronicles](#culinary-chronicles)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Questions](#questions)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributors](#contributors)
+- [License](#license)
+- [Contact](#contact)
 
+## Features
+
+- **Discover Recipes**: Browse through a vast collection of recipes from various cuisines and categories.
+- **User Ratings**: Rate your favorite recipes and see what others think.
+- **Save Recipes**: Keep a personal collection of recipes you'd love to try or revisit.
+- **Responsive Design**: Whether on desktop, tablet, or mobile, Culinary Chronicles provides a seamless experience.
 
 ## Installation
 
-No need to install navigate to : [Heroku](https://culinary-chronicle-38d83bbc86cd.herokuapp.com/login)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/GregFJr/Culinary-Chronicles.git
+   ```
+
+2. Navigate to the project directory and install dependencies:
+   ```bash
+   cd culinary-chronicles
+   npm install
+   ```
+
+3. Set up your environment variables in a `.env` file at the root of your project.
+
+4. Start the application:
+   ```bash
+   npm start
+   ```
 
 ## Usage
 
-![gif](./public/images/culinarychronicles.gif)
+Visit `http://localhost:PORT` (replace `PORT` with your configuration) in your browser to access Culinary Chronicles.
 
-## License
+## Technologies Used
 
-This project is licensed under the MIT License. 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- Node.js
+- Express.js
+- Sequelize ORM
+- MySQL
+- Handlebars.js
+- And more...
 
-## Contributing
+## Contributors
 
 - [Jose Guillen](https://github.com/Exo-MDR-CD2000)
 - [Gregory Finney](https://github.com/GregFJr)
 - [Matt Velazquez](https://github.com/mattscodingcorner)
 
+## License
 
-## Questions
-
-If you have any questions, please contact us on Github. 
-    
-    
+This project is currently not licensed.
