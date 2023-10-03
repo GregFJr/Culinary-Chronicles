@@ -12,8 +12,10 @@ router.get("/", async (req, res) => {
         });
 
         const ratedRecipes = ratedRecipesData.map(recipe => recipe.get({ plain: true }));
+        const user = req.user ? req.user.get({ plain: true }) : null;
 
-        res.render("social", { ratedRecipes });
+
+        res.render("social", { ratedRecipes, user: user });
 
     } catch (err) {
         console.error(err);
