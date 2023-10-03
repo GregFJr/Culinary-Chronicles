@@ -15,11 +15,11 @@ A recipe website built with Handlebars for the front end, MySQL and Sequelize fo
 
 ## Installation
 
-No need to install navigate to : [Heroku]()
+No need to install navigate to : [Heroku](https://culinary-chronicle-38d83bbc86cd.herokuapp.com/login)
 
 ## Usage
 
-<!-- gif goes here -->
+![gif](./public/images/culinarychronicles.gif)
 
 ## License
 
