@@ -1,108 +1,108 @@
 [
-    {
-      "title": "Macaroni Casarole",
-      "ingredients": "Macaroni, Milk, Cheddar, Gouda, Colby Jack",
-      "instructions": "Boil pasta, make cheese sauce by combining a fat and starch, cook the sauce until it's nice and thick, cook",
-      "prep": 10, 
-      "cook": 20,
-      "image_url": "/images/Mac.jpg"
-    },
-    {
-      "title": "Spicy Veggie Stir-Fry",
-      "ingredients": "Bell peppers, Broccoli, Carrots, Soy sauce, Ginger, Garlic, Red pepper flakes",
-      "instructions": "Heat oil in a pan, sauté garlic and ginger, add veggies and stir-fry for 5-7 minutes, add soy sauce and red pepper flakes, cook until veggies are tender",
-      "prep": 15,
-      "cook": 10,
-      "image_url": "/images/VeggieStir.jpg"
-    },
-    {
-      "title": "Creamy Tomato Soup",
-      "ingredients": "Tomatoes, Onion, Garlic, Basil, Cream, Olive oil, Salt, Pepper",
-      "instructions": "Heat oil, sauté onions and garlic, add chopped tomatoes and cook until soft, blend into a puree, return to heat, add cream, season and garnish with basil",
-      "prep": 10,
-      "cook": 30,
-      "image_url": "/images/Tomato.jpg"
-    },
-    {
-      "title": "Garlic Herb Roasted Chicken",
-      "ingredients": "Whole chicken, Garlic, Rosemary, Thyme, Olive oil, Salt, Pepper, Lemon",
-      "instructions": "Preheat oven, rub chicken with herb-garlic mixture, place lemon inside chicken cavity, roast until golden brown and fully cooked",
-      "prep": 20,
-      "cook": 60,
-      "image_url": "/images/GarlicChick.jpg"
-    },
-    {
-      "title": "Tropical Fruit Salad",
-      "ingredients": "Mango, Pineapple, Kiwi, Coconut flakes, Mint, Lime zest, Lime juice",
-      "instructions": "Dice fruits, combine in a bowl, sprinkle coconut flakes, zest and juice of lime, garnish with mint leaves",
-      "prep": 15,
-      "cook": 0,
-      "image_url": "/images/FruitSalad.jpg"
-    },
-    {
-     "title": "Lemon Herb Grilled Salmon",
-     "ingredients": "Salmon fillets, Lemon zest, Lemon juice, Garlic, Dill, Olive oil, Salt, Pepper",
-     "instructions": "Marinate salmon with lemon, herbs, and garlic for 30 minutes, grill each side for 4-5 minutes or until done",
-     "prep": 35,
-     "cook": 10,
-     "image_url": "/images/GrilledSalmon.jpg"
-    },
-    {
-     "title": "Chocolate Pudding",
-     "ingredients": "Cocoa powder, Maple syrup, Vanilla extract, Pinch of salt",
-     "instructions": "Blend all ingredients until smooth, chill for an hour before serving",
-     "prep": 10,
-     "cook": 0,
-     "image_url": "/images/ChocolatePudding.jpg"
-    },
-    {
-     "title": "Chicken Stuffed Pastry",
-     "ingredients": "Chicken breasts, Spinach, Feta cheese, Garlic, Pastry rolls, Olive oil, Salt, Pepper",
-     "instructions": "Sauté spinach and garlic, mix with feta, stuff into chicken breasts, bake until chicken is cooked through",
-     "prep": 15,
-     "cook": 25,
-     "image_url": "/images/ChickenStuffedPastry.jpg"
-    },
-    {
-     "title": "Vegetable Quinoa Pilaf",
-     "ingredients": "Quinoa, Broccoli, Carrots, Peas, Onion, Vegetable broth, Olive oil, Salt, Pepper",
-     "instructions": "Sauté onions, add quinoa and veggies, cook with broth until quinoa is fluffy and vegetables are tender",
-     "prep": 10,
-     "cook": 20,
-     "image_url": "/images/VegetableQuinoaPilaf.jpg"
-    },
-    {
-      "title": "Spaghetti Carbonara",
-      "ingredients": "Spaghetti, Eggs, Pancetta, Pecorino Cheese, Black Pepper",
-      "instructions": "Cook the spaghetti. Mix eggs and cheese. Fry pancetta. Combine all with pepper.",
-      "prep": 15,
-      "cook": 20,
-      "image_url": "/images/SpaghettiCarb.jpg"
+  {
+    "title": "Macaroni Casserole",
+    "ingredients": "Macaroni: 2 cups (uncooked), Milk: 2 cups, Cheddar cheese: 1 cup (shredded), Gouda cheese: 1/2 cup (shredded), Colby Jack cheese: 1/2 cup (shredded), Butter: 2 tablespoons, Flour: 2 tablespoons, Salt and Pepper: to taste",
+    "instructions": "1. Cook macaroni according to package instructions until al dente. Drain and set aside. 2. In a separate saucepan, melt butter over medium heat. Whisk in flour until a paste forms. 3. Gradually whisk in milk and bring to a simmer. Cook until thickened, about 2-3 minutes. 4. Remove from heat and stir in cheeses until melted. Season with salt and pepper. 5. Combine cheese sauce with drained macaroni, transfer to a baking dish. 6. Bake in a preheated oven at 375°F (190°C) for 20 minutes or until bubbly and golden on top.",
+    "prep": 10,
+    "cook": 20,
+    "image_url": "/images/Mac.jpg"
+  },
+  {
+    "title": "Spicy Veggie Stir-Fry",
+    "ingredients": "Bell peppers: 2 (sliced), Broccoli: 1 cup (florets), Carrots: 2 (sliced), Soy sauce: 3 tablespoons, Ginger: 1-inch piece (minced), Garlic: 3 cloves (minced), Red pepper flakes: 1 teaspoon",
+    "instructions": "1. In a large wok or skillet, heat 2 tablespoons of vegetable oil over medium-high heat. 2. Add minced garlic and ginger, sauté for 30 seconds. 3. Add bell peppers, broccoli, and carrots. Stir-fry for 5-7 minutes or until vegetables are slightly tender. 4. Pour in soy sauce and sprinkle red pepper flakes. Continue to stir-fry for another 2-3 minutes. 5. Serve hot with steamed rice or noodles.",
+    "prep": 15,
+    "cook": 10,
+    "image_url": "/images/VeggieStir.jpg"
+  },
+  {
+    "title": "Creamy Tomato Soup",
+    "ingredients": "Tomatoes: 6 (large, chopped), Onion: 1 (chopped), Garlic: 4 cloves (minced), Basil: 1/4 cup (fresh, chopped), Cream: 1/2 cup, Olive oil: 2 tablespoons, Salt: 1 teaspoon, Pepper: 1/2 teaspoon",
+    "instructions": "1. In a large pot, heat olive oil over medium heat. Add onions and garlic, sauté until translucent. 2. Add chopped tomatoes and cook until they are soft and slightly mushy. 3. Using an immersion blender, puree the mixture until smooth. Alternatively, transfer to a blender and blend until smooth. 4. Return the puree to heat, add cream, and mix well. Season with salt, pepper, and half of the chopped basil. 5. Simmer for 10 minutes. Serve hot garnished with the remaining basil.",
+    "prep": 10,
+    "cook": 30,
+    "image_url": "/images/Tomato.jpg"
+  },
+  {
+    "title": "Garlic Herb Roasted Chicken",
+    "ingredients": "Whole chicken: 4-5 lbs, Garlic: 5 cloves (minced), Rosemary: 2 tablespoons (fresh, chopped), Thyme: 2 tablespoons (fresh, chopped), Olive oil: 3 tablespoons, Salt: 1 teaspoon, Pepper: 1/2 teaspoon, Lemon: 1 (quartered)",
+    "instructions": "1. Preheat oven to 425°F (220°C). 2. In a bowl, mix together minced garlic, chopped rosemary, thyme, olive oil, salt, and pepper to form a paste. 3. Pat the chicken dry with paper towels. Rub the herb-garlic mixture all over the chicken, both outside and under the skin. 4. Place quartered lemon inside the chicken cavity. 5. Place the chicken on a roasting pan, breast side up. Roast in the preheated oven for about 1 hour or until the chicken is golden brown and the internal temperature reaches 165°F (74°C). 6. Let the chicken rest for 10 minutes before carving. Serve with desired side dishes.",
+    "prep": 20,
+    "cook": 60,
+    "image_url": "/images/GarlicChick.jpg"
+  },
+  {
+    "title": "Tropical Fruit Salad",
+    "ingredients": "Mango: 1 (diced), Pineapple: 1 cup (diced), Kiwi: 2 (sliced), Coconut flakes: 1/4 cup, Mint: 8 leaves (chopped), Lime zest: from 1 lime, Lime juice: from 1 lime",
+    "instructions": "1. In a large bowl, combine diced mango, pineapple, and sliced kiwi. 2. Sprinkle coconut flakes over the fruit mixture. 3. Add the zest and juice of one lime, tossing gently to combine. 4. Garnish with chopped mint leaves before serving. Chill if desired.",
+    "prep": 15,
+    "cook": 0,
+    "image_url": "/images/FruitSalad.jpg"
+  },
+  {
+    "title": "Lemon Herb Grilled Salmon",
+    "ingredients": "Salmon fillets: 4 (6-ounce each), Lemon zest: from 1 lemon, Lemon juice: from 2 lemons, Garlic: 3 cloves (minced), Dill: 2 tablespoons (chopped), Olive oil: 2 tablespoons, Salt: 1/2 teaspoon, Pepper: 1/4 teaspoon",
+    "instructions": "1. In a bowl, mix together lemon zest, lemon juice, minced garlic, chopped dill, olive oil, salt, and pepper. 2. Place salmon fillets in a shallow dish and pour the marinade over them. Let them marinate for at least 30 minutes. 3. Preheat grill to medium-high heat. 4. Place salmon fillets on the grill and cook for 4-5 minutes on each side or until they easily flake with a fork. 5. Serve with your choice of side dish.",
+    "prep": 35,
+    "cook": 10,
+    "image_url": "/images/GrilledSalmon.jpg"
+  },
+  {
+    "title": "Chocolate Pudding",
+    "ingredients": "Cocoa powder: 1/2 cup, Maple syrup: 1/2 cup, Vanilla extract: 1 teaspoon, Pinch of salt, Coconut milk: 1 cup (or almond milk)",
+    "instructions": "1. In a blender, combine cocoa powder, maple syrup, vanilla extract, salt, and coconut milk. 2. Blend on high until the mixture is smooth and well combined. 3. Transfer the mixture to serving dishes. 4. Chill in the refrigerator for at least 1 hour before serving. Garnish with whipped cream or chocolate shavings if desired.",
+    "prep": 10,
+    "cook": 0,
+    "image_url": "/images/ChocolatePudding.jpg"
+  },
+  {
+    "title": "Chicken Stuffed Pastry",
+    "ingredients": "Chicken breasts: 2 (boneless, skinless), Spinach: 2 cups (chopped), Feta cheese: 1/2 cup (crumbled), Garlic: 2 cloves (minced), Pastry rolls: 4, Olive oil: 2 tablespoons, Salt: 1/2 teaspoon, Pepper: 1/4 teaspoon",
+    "instructions": "1. Preheat oven to 375°F (190°C). 2. In a skillet, heat 1 tablespoon of olive oil over medium heat. Sauté spinach and garlic until spinach is wilted. Remove from heat and mix in crumbled feta cheese. 3. Season chicken breasts with salt and pepper. Slice a pocket into the side of each breast and stuff with the spinach-feta mixture. 4. Roll each stuffed chicken breast in a pastry roll. Place them seam side down on a baking sheet. 5. Brush the tops of the pastry with remaining olive oil. 6. Bake in the preheated oven for 25 minutes or until chicken is cooked through and pastry is golden.",
+    "prep": 15,
+    "cook": 25,
+    "image_url": "/images/ChickenStuffedPastry.jpg"
+  },
+  {
+    "title": "Vegetable Quinoa Pilaf",
+    "ingredients": "Quinoa: 1 cup (rinsed), Broccoli: 1 cup (florets), Carrots: 2 (sliced), Peas: 1/2 cup, Onion: 1 (chopped), Vegetable broth: 2 cups, Olive oil: 2 tablespoons, Salt: 1/2 teaspoon, Pepper: 1/4 teaspoon",
+    "instructions": "1. In a large skillet, heat olive oil over medium heat. Add chopped onions and sauté until translucent. 2. Add quinoa to the skillet and toast for 2 minutes, stirring frequently. 3. Pour in vegetable broth and bring to a simmer. Add broccoli, carrots, and peas. 4. Reduce heat, cover, and let cook for 15-20 minutes or until quinoa is fluffy and vegetables are tender. 5. Season with salt and pepper. Fluff with a fork before serving.",
+    "prep": 10,
+    "cook": 20,
+    "image_url": "/images/VegetableQuinoaPilaf.jpg"
+  },
+  {
+    "title": "Spaghetti Carbonara",
+    "ingredients": "Spaghetti: 8 oz (uncooked), Eggs: 2 (large), Pancetta: 1/2 cup (diced), Pecorino Cheese: 1 cup (grated), Black Pepper: 1/2 teaspoon, Salt: for pasta water",
+    "instructions": "1. Cook the spaghetti in a pot of boiling salted water until al dente. Reserve 1 cup of pasta water and then drain the spaghetti. 2. In a separate bowl, whisk together eggs and pecorino cheese. Set aside. 3. In a large skillet, cook the pancetta over medium heat until crispy. Remove from heat. 4. Add the drained spaghetti to the skillet with pancetta. Toss to combine. 5. Quickly pour the egg and cheese mixture over the spaghetti. Toss rapidly, using the reserved pasta water a little at a time to create a creamy sauce. 6. Season with black pepper. Serve immediately with additional pecorino cheese on top.",
+    "prep": 15,
+    "cook": 20,
+    "image_url": "/images/SpaghettiCarb.jpg"
   },
   {
     "title": "Margherita Pizza",
-    "ingredients": "Pizza Dough, Tomato Sauce, Fresh Mozzarella, Basil, Olive Oil",
-    "instructions": "Roll out dough, spread sauce, add slices of mozzarella, bake until golden, and garnish with fresh basil.",
+    "ingredients": "Pizza Dough: 1 (store-bought or homemade), Tomato Sauce: 1/2 cup, Fresh Mozzarella: 8 oz (sliced), Basil: 1/4 cup (fresh), Olive Oil: 1 tablespoon, Salt: a pinch",
+    "instructions": "1. Preheat oven to 475°F (245°C). If using a pizza stone, place it in the oven while preheating. 2. Roll out the pizza dough on a floured surface to your desired thickness. If using a pizza stone, transfer the rolled dough onto a pizza peel or an inverted baking sheet dusted with flour. 3. Spread tomato sauce evenly over the dough, leaving a small border for the crust. 4. Place slices of fresh mozzarella evenly over the sauce. 5. Drizzle olive oil over the pizza and sprinkle with a pinch of salt. 6. Transfer the pizza to the preheated oven (or onto the pizza stone). Bake for 12-15 minutes, or until the crust is golden and the cheese is bubbly and slightly browned. 7. Remove from oven and immediately garnish with fresh basil leaves. Slice and serve.",
     "prep": 20,
     "cook": 15,
     "image_url": "/images/Margherita-pizza.jpg"
-},
-{
+  },
+  {
     "title": "Beef Tacos",
-    "ingredients": "Tortillas, Spiced Beef, Salsa, Cheese, Guacamole",
-    "instructions": "Cook spiced beef, warm tortillas, and assemble with toppings of choice.",
+    "ingredients": "Tortillas: 8 (small), Spiced Beef: 1 lb (cooked), Salsa: 1 cup, Cheese: 1 cup (shredded), Guacamole: 1 cup, Lettuce: 1 cup (shredded), Tomato: 1 (diced)",
+    "instructions": "1. In a skillet, cook the spiced beef over medium heat until fully cooked. Break the meat into small pieces as it cooks. Remove from heat and set aside. 2. Warm the tortillas in a dry skillet or microwave for about 20 seconds. 3. Assemble the tacos by placing a scoop of spiced beef on each tortilla. 4. Top with salsa, shredded cheese, guacamole, lettuce, and diced tomato. 5. Fold the tortillas in half and serve immediately.",
     "prep": 15,
     "cook": 10,
     "image_url": "/images/Beef-tacos.jpg"
-},
-{
+  },
+  {
     "title": "Chicken Tikka Masala",
-    "ingredients": "Chicken, Yogurt, Spices, Tomato Sauce, Cream",
-    "instructions": "Marinate chicken in yogurt and spices. Grill chicken pieces. Prepare sauce with tomatoes and spices. Combine chicken with sauce and serve.",
+    "ingredients": "Chicken: 1 lb (boneless, skinless, cut into bite-sized pieces), Yogurt: 1/2 cup, Spices (cumin, coriander, turmeric, garam masala): 2 teaspoons each, Tomato Sauce: 1 cup, Cream: 1/2 cup, Onion: 1 (finely chopped), Garlic: 3 cloves (minced), Ginger: 1-inch piece (grated), Olive oil: 2 tablespoons, Salt: 1/2 teaspoon, Cilantro: for garnish",
+    "instructions": "1. In a bowl, mix together yogurt, cumin, coriander, turmeric, garam masala, and salt. Add chicken pieces and marinate for at least 1 hour, preferably overnight. 2. In a large skillet or pan, heat olive oil over medium heat. Add onions and sauté until translucent. Add minced garlic and grated ginger, sauté for another 2 minutes. 3. Add marinated chicken pieces to the skillet and cook until browned on all sides. 4. Pour in tomato sauce and let it simmer for 10 minutes. 5. Reduce heat, add cream and stir well. Let it simmer for another 10 minutes or until chicken is cooked through. 6. Garnish with chopped cilantro. Serve with steamed rice or naan.",
     "prep": 25,
     "cook": 40,
     "image_url": "/images/Chicken-tikka.jpg"
-}
+  }
   
   ]
   
